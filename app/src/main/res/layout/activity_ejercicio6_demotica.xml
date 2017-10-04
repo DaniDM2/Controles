@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dm2.controles.Ejercicio6Demotica"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Camara 1:"
+            android:layout_margin="10dp"/>
+        <Switch
+            android:id="@+id/sw1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Cam1"
+            android:checked="true"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Luz 1:"
+            android:layout_margin="10dp"/>
+        <Switch
+            android:id="@+id/sw2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Luz1"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Camara 1:"
+            android:layout_margin="10dp"/>
+        <ToggleButton
+            android:id="@+id/tg1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Cam2"
+            android:checked="true"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Luz 2:"
+            android:layout_margin="10dp"/>
+        <ToggleButton
+            android:id="@+id/tg2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Luz2"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+       <ImageView
+           android:id="@+id/cam1"
+           android:layout_width="50dp"
+           android:layout_height="wrap_content"
+           android:src="@drawable/cam"
+           android:layout_margin="5dp"
+           />
+        <ImageView
+            android:id="@+id/luz1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/apagada"
+            android:layout_margin="5dp"
+            />
+        <ImageView
+            android:id="@+id/cam2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cam"
+            android:layout_margin="5dp"
+            />
+        <ImageView
+            android:id="@+id/luz2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/apagada"
+            android:layout_margin="5dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
